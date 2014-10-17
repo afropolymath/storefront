@@ -51,13 +51,11 @@
 			<li ui-route="/signin" ng-class="{active: $uiRoute}">
 				<a href="/#!/signin">Sign In</a>
 			</li>
+
+			<!-- <li ui-route="/signup" ng-class="{active: $uiRoute}">
+				<a href="/#!/signup"><button class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i> Create Product</button></a>
+			</li> -->
 		</ul>
-		<form class="navbar-form navbar-right" role="search">
-	        <div class="form-group">
-	        	<input type="text" class="form-control" placeholder="Search">
-	        </div>
-	        <button type="submit" class="btn btn-default">Submit</button>
-	    </form>
 		<ul class="nav navbar-nav navbar-right" data-ng-show="authentication.user">
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">

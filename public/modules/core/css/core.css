@@ -25,3 +25,38 @@ h1.application-header {
 	margin-top: 2.0em;
 	font-family: "Roboto", Arial, sans-serif;
 }
+.product-box {
+	margin-bottom: 3.0em;
+}
+.product-box .product-image {
+	position: relative;
+	background: #CCC;
+	height: 250px;
+}
+.product-box .product-image .likes {
+	position: absolute;
+	right: 1.0em;
+	top: 1.0em;
+	z-index:99;
+	background: #f9c700;
+	padding: 0.5em 0.7em;
+	border-radius: 4px;
+	box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+}
+.product-box .product-image .product-description {
+	background: rgba(255,255,255,0.9);
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	padding-top:0;
+	padding: 0 30px;
+	opacity: 0;
+	transition: all .3s;
+}
+.product-box:hover .product-image .product-description {
+	padding-top: 50px;
+	opacity: 1;
+	transition: all .3s;
+}
+.product-box .product-details {
+	margin-top: 0.5em;
+}
